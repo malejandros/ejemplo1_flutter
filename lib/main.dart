@@ -1,4 +1,5 @@
-import 'package:ejemplo1/primera_vista.dart';
+import 'package:ejemplo1/formulario_registro.dart';
+// import 'package:ejemplo1/primera_vista.dart';
 // import 'package:ejemplo1/segunda_vista.dart';
 // import 'package:ejemplo1/tercera_vista.dart';
 // import 'package:ejemplo1/vista_con_argumentos.dart';
@@ -12,7 +13,7 @@ class MyCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: PrimeraVista(),
+      home: FormularioRegistro(),
       // initialRoute: '/',
       // routes: {
       //   '/': (context) => PrimeraVista(),
