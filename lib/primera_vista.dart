@@ -1,6 +1,7 @@
 // import 'package:ejemplo1/segunda_vista.dart';
 // import 'package:ejemplo1/tercera_vista.dart';
-import 'package:ejemplo1/argumentos.dart';
+// import 'package:ejemplo1/argumentos.dart';
+import 'package:ejemplo1/vista_con_argumentos.dart';
 import 'package:flutter/material.dart';
 
 class PrimeraVista extends StatelessWidget {
@@ -74,9 +75,16 @@ class PrimeraVista extends StatelessWidget {
           ),
           RaisedButton(
             onPressed: () {
-              Navigator.pushNamed(context, '/argumentos',
-                  arguments: Argumentos(
-                      nombre: 'Manuel', correo: 'micorreo@gmail.com'));
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => VistaConArgumentos(
+                      nombre: 'Manuel', correo: 'micorreo@gmail.com'),
+                ),
+              );
+              // Navigator.pushNamed(context, '/argumentos',
+              //     arguments: Argumentos(
+              //         nombre: 'Manuel', correo: 'micorreo@gmail.com'));
               // Navigator.push(
               //     context, MaterialPageRoute(builder: (context) => Tercera()));
             },
