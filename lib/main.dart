@@ -1,6 +1,7 @@
 import 'package:ejemplo1/primera_vista.dart';
 import 'package:ejemplo1/segunda_vista.dart';
 import 'package:ejemplo1/tercera_vista.dart';
+import 'package:ejemplo1/vista_con_argumentos.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -17,6 +18,7 @@ class MyCard extends StatelessWidget {
         '/': (context) => PrimeraVista(),
         '/segunda': (context) => SegundaVista(),
         '/tercera': (context) => Tercera(),
+        '/argumentos': (context) => VistaConArgumentos(),
       },
     );
   }
